@@ -5,104 +5,38 @@
 
 <head>
     <jsp:include page="../css.jsp" />
-    <title>Ecorik - Hotel & Resort Bootstrap 5 Template</title>
+    <title>Home - Hotel & Resort Booking</title>
+    <style>
+    	.modal-content {
+    background-image: url('assets/img/tigimg.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #fff;
+  }
+  .modal-body input,
+  .modal-body textarea {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    color: #fff; /* White text for visibility */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent white border */
+  }
+
+  .modal-body input::placeholder,
+  .modal-body textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Semi-transparent placeholder text */
+  }
+
+  .modal-body input:focus,
+  .modal-body textarea:focus {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker background on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* Subtle glow effect */
+  }
+    </style>
 </head>
 
 <body>
     <jsp:include page="../header.jsp" />
-
-    <!-- Start Sidebar Modal -->
-    <div class="sidebar-modal">
-        <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">
-									<i class="bx bx-x"></i>
-								</span>
-							</button>
-                        <h2 class="modal-title" id="myModalLabel2">
-                            <a href="index.html">
-									<img src="assets/img/home-one/logo.jpg" alt="Logo">
-								</a>
-                        </h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="sidebar-modal-widget">
-                            <h3 class="title">About Us</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus eum laboriosam praesentium delectus unde magni aut perspiciatis cumque deserunt dolore voluptate, autem pariatur? Dicta pariatur.</p>
-                        </div>
-                        <div class="sidebar-modal-widget">
-                            <h3 class="title">Additional Links</h3>
-                            <ul>
-                                <li>
-                                    <a href="log-in.html">Log In</a>
-                                </li>
-                                <li>
-                                    <a href="sign-up.html">Sign Up</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="log-in.html">Logout</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-modal-widget">
-                            <h3 class="title">Contact Info</h3>
-                            <ul class="contact-info">
-                                <li>
-                                    <i class="bx bx-location-plus"></i> Address
-                                    <span>New York - 1060, Str. First 78 Great Western Road</span>
-                                </li>
-                                <li>
-                                    <i class="bx bx-envelope"></i> Email
-                                    <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ae2efe6e6e5cafaf8effce5f0a4e9e5e7">[email&#160;protected]</a></span>
-                                </li>
-                                <li>
-                                    <i class="bx bxs-phone-call"></i> Phone
-                                    <span>+502-464-679, +265-497-466</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-modal-widget">
-                            <h3 class="title">Connect With Us</h3>
-                            <ul class="social-list">
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-											<i class='bx bxl-twitter'></i>
-										</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
-											<i class='bx bxl-facebook'></i>
-										</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/" target="_blank">
-											<i class='bx bxl-instagram'></i>
-										</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" target="_blank">
-											<i class='bx bxl-linkedin'></i>
-										</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/" target="_blank">
-											<i class='bx bxl-youtube'></i>
-										</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Sidebar Modal -->
 
     <!-- Start Ecorik Slider Area -->
     <section class="eorik-slider-area">
@@ -112,11 +46,11 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="eorik-slider-text overflow-hidden one eorik-slider-text-one">
-                                <h1>Relax Vacation</h1>
+                                <h1>Discover Nature</h1>
                                 <span>Discover the place where you have fun & enjoy a lot</span>
                                 <div class="slider-btn">
-                                    <a class="default-btn" href="book-table.html">
-											Book To Stay
+                                    <a class="default-btn" href="contact">
+											Book Now
 											<i class="flaticon-right"></i>
 										</a>
                                 </div>
@@ -130,11 +64,11 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="eorik-slider-text overflow-hidden two eorik-slider-text-one">
-                                <h1>Take Vacations</h1>
-                                <span>Discover the place where you have fun & enjoy a lot</span>
+                                <h1>Reconnect with Nature</h1>
+                                <span>Rediscover peace, escape chaos, and reconnect deeply with nature's beauty.</span>
                                 <div class="slider-btn">
-                                    <a class="default-btn" href="book-table.html">
-											Book To Stay
+                                    <a class="default-btn" href="contact">
+											Book Now
 											<i class="flaticon-right"></i>
 										</a>
                                 </div>
@@ -148,11 +82,11 @@
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="eorik-slider-text overflow-hidden three eorik-slider-text-one">
-                                <h1>Favorite Vacation</h1>
-                                <span>Discover the place where you have fun & enjoy a lot</span>
+                                <h1>Experience Nature</h1>
+                                <span>Explore wilderness, embrace serenity, and feel nature's true essence.</span>
                                 <div class="slider-btn">
-                                    <a class="default-btn" href="book-table.html">
-											Book To Stay
+                                    <a class="default-btn" href="contact">
+											Book Now
 											<i class="flaticon-right"></i>
 										</a>
                                 </div>
@@ -168,27 +102,27 @@
         <div class="social-link">
             <ul>
                 <li>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=61569300043582" target="_blank">
 							<i class="bx bxl-facebook"></i>
 						</a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com/" target="_blank">
-							<i class="bx bxl-twitter"></i>
+                    <a href="javascript:void(0)" target="_blank">
+							<i class="bx bxl-instagram"></i>
 						</a>
                 </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                <!-- <li>
+                    <a href="javascript:void(0)" target="_blank">
 							<i class="bx bxl-linkedin"></i>
 						</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </section>
     <!-- End Ecorik Slider Area -->
 
-    <!-- Start Check Area -->
-    <div class="check-area mb-minus-70">
+     <!-- Start Check Area -->
+   <!-- <div class="check-area mb-minus-70">
         <div class="container">
             <form class="check-form">
                 <div class="row align-items-center">
@@ -265,91 +199,262 @@
             </form>
         </div>
     </div>
-    <!-- End Check Section -->
+    End Check Section -->
 
     <!-- Start Explore Area -->
-    <section class="explore-area pt-170 pb-100">
+    <section class="explore-area pt-100 pb-100">
         <div class="container">
             <div class="section-title">
-                <span>Explore</span>
-                <h2>We are cool to give you pleasure</h2>
+                <span>welcome to BTR</span>
+                <h2>One of the finest Wildlife Resort in Bandhavgarh</h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="explore-img">
-                        <img src="assets/img/explore-img.png" alt="Image">
+                        <img src="assets/img/BTR/IMG_20241117_095946.jpg" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="explore-content ml-30">
                         <h2>As much as comfort want to get from us everything</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eveniet reprehenderit ratione ad perspiciatis repudiandae iste ipsam temporibus sit quo! Incidunt, necessitatibus fugiat ut dignissimos pariatur odit natus ipsum!
-                            Obcaecati iste ipsam temporibus sit quo! Incidunt, necessitatibus Obcaecati iste ipsam temporibus Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>Nestled across an expansive 2 acres, just 5 minutes from the main Tala Park gate, Bandhavgarh Tiger Resort invites you to experience unmatched tranquility. Discover comfort in our 20 air-conditioned Superior Rooms, each adorned with a personal verandah and balcony. Indulge in luxurious bathrooms and savor farm-fresh delights at our two distinct restaurants. Committed to environmental sensitivity, we seamlessly blend with the surrounding beauty. As one of the premier wildlife resorts in Bandhavgarh, managed by seasoned professionals, we uphold a steadfast dedication to conservation, local communities, and eco-friendly practices. Your connection with us is bound to be a lifetime affair.</p>
 
-                        <p>Konin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim ad minim veniam, quis nostrud exercitation. dolor sit amet, consectetur adipisicing quis nostrud
+                       <!--  <p>Konin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nim ad minim veniam, quis nostrud exercitation. dolor sit amet, consectetur adipisicing quis nostrud
                             exercitation Lorem ipsum dolor sit amet consectetur.</p>
                         <a href="about.html" class="default-btn">
 								explore More
 								<i class="flaticon-right"></i>
-							</a>
+							</a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Explore Area -->
+    <!-- Start City View Area -->
+    <section class="city-view-area ptb-100">
+        <div class="container">
+            <div class="city-wrap">
+                <div class="single-city-item owl-carousel owl-theme">
+                    <div class="city-view-single-item">
+                        <div class="city-content">
+                            <span>highlights</span>
+                            <h3>Unveil the Wonders of Bandhavgarh – Where Nature Meets Adventure</h3>
+                            <p>Bandhavgarh offers an unparalleled experience with its breathtaking landscapes, abundant wildlife, and thrilling safari opportunities. Explore the heart of nature, where every moment brings new excitement and discovery, making it the perfect destination for adventure seekers.</p>
 
+                            <p>Whether you’re an avid wildlife photographer or simply seeking tranquility, Bandhavgarh ensures a memorable journey through its pristine wilderness.</p>
+                        </div>
+                    </div>
+                    <div class="city-view-single-item">
+                        <div class="city-content">
+                            <span>highlights</span>
+                            <h3>Bandhavgarh: A Haven for Wildlife Enthusiasts and Nature Lovers</h3>
+                            <p>Bandhavgarh is a haven for wildlife enthusiasts, home to majestic tigers, diverse wildlife, and spectacular natural beauty. Experience the thrill of safaris and get up close with nature’s wonders in a truly untouched environment.</p>
+
+                            <p>With its rich flora, fauna, and peaceful atmosphere, Bandhavgarh is the ultimate escape for those seeking adventure or a serene retreat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End City View Area -->
+ <!-- Start Our Rooms Area -->
+		<section class="our-rooms-area ptb-100"> 
+			<div class="container">
+				<div class="section-title">
+					<span>Our Rooms</span>
+					<h2>Fascinating rooms & suites</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 mt-3">
+						<div class="single-rooms-three-wrap">
+							<div class="single-rooms-three">
+								<img src="assets/img/BTR/delux.jpg" alt="Image" style="height: 100%; width: -webkit-fill-available;">
+								<div class="single-rooms-three-content">
+									<h3>Deluxe Room</h3>
+									<ul class="rating">
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+									</ul>
+									<a href="contact" class="default-btn">
+										Book Now
+										<i class="flaticon-right"></i>
+									</a>
+									<span class="information" data-toggle="tooltip" data-placement="top" title="Swimming doller dolor sit aet odu tur adiing elitse">
+										<i class='bx bx-info-circle'></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 mt-3">
+						<div class="single-rooms-three-wrap">
+							<div class="single-rooms-three" >
+								<img src="assets/img/BTR/luxury.jpg" alt="Image"style="height: 100%; width: -webkit-fill-available;">
+								<div class="single-rooms-three-content">
+									<h3>Superior Room</h3>
+									<ul class="rating">
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+									</ul>
+									<a href="contact" class="default-btn">
+										Book Now
+										<i class="flaticon-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 mt-3">
+						<div class="single-rooms-three-wrap">
+							<div class="single-rooms-three">
+								<img src="assets/img/family.webp" alt="Image"style="height: 100%; width: -webkit-fill-available;">
+								<div class="single-rooms-three-content">
+									<h3>Family Room</h3>
+									<ul class="rating">
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+										<li>
+											<i class="bx bxs-star"></i>
+										</li>
+									</ul>
+									<a href="book-table.html" class="default-btn">
+										Book Now
+										<i class="flaticon-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Our Rooms Area -->
     <!-- End Facilities Area -->
     <section class="facilities-area pb-60">
         <div class="container">
             <div class="section-title">
-                <span>Facilities</span>
+                <span>Resort Facilities</span>
                 <h2>Giving entirely awesome</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-facilities-wrap">
                         <div class="single-facilities">
+                            <i class="fa fa-wifi" style="color: #cc8c18; font-size: 35px;"></i>
+                            <h3>Free Wifi Internet​</h3>
+                            <p>Complimentary high-speed Wi-Fi, ensuring seamless browsing and connectivity throughout your stay.</p>
+                            <a href="javascript:void(0)" class="icon-btn">
+									<i class="flaticon-right"></i>
+								</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-facilities-wrap">
+                        <div class="single-facilities">
+                            <i class="fa fa-shopping-bag" style="color: #cc8c18; font-size: 35px;"></i>
+                            <h3>Nature Shop​</h3>
+                            <p>Nature Shop with eco-friendly products, unique souvenirs, and essentials for outdoor adventures.</p>
+                            <a href="javascript:void(0)" class="icon-btn">
+									<i class="flaticon-right"></i>
+								</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-facilities-wrap">
+                        <div class="single-facilities">
+                            <i class="fa fa-headphones" style="color: #cc8c18; font-size: 35px;"></i>
+                            <h3>24/7 Reception​</h3>
+                            <p>24/7 Reception offering friendly assistance, check-ins, and support at any time for your convenience.</p>
+                            <a href="javascript:void(0)" class="icon-btn">
+									<i class="flaticon-right"></i>
+								</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-facilities-wrap">
+                        <div class="single-facilities">
+                            <i class="fa fa-cutlery" style="color: #cc8c18; font-size: 35px;"></i>
+                            <h3>Own Restaurant</h3>
+                            <p>On-site restaurant offering delicious local and international cuisine for a delightful dining experience.</p>
+                            <a href="javascript:void(0)" class="icon-btn">
+									<i class="flaticon-right"></i>
+								</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-facilities-wrap">
+                        <div class="single-facilities">
+                            <i class="restaurants-icon flaticon-swimming" style="color: #cc8c18; font-size: 35px;"></i>
+                            <h3>Swimming pool</h3>
+                            <p>Swimming pool facility offering relaxation, exercise, and enjoyable swimming experiences throughout your stay.</p>
+                            <a href="javascript:void(0)" class="icon-btn">
+									<i class="flaticon-right"></i>
+								</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-facilities-wrap">
+                        <div class="single-facilities">
+                            <i class="fa-solid fa-spa" style="color: #cc8c18; font-size: 35px;"></i>
+                            <h3>Spa</h3>
+                            <p>Luxurious spa offering rejuvenating treatments and massages for ultimate relaxation and wellness.</p>
+                            <a href="javascript:void(0)" class="icon-btn">
+									<i class="flaticon-right"></i>
+								</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-facilities-wrap">
+                        <div class="single-facilities">
                             <i class="facilities-icon flaticon-pickup"></i>
-                            <h3>Pick Up & Drop​</h3>
-                            <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                            <a href="service-details.html" class="icon-btn">
-									<i class="flaticon-right"></i>
-								</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-facilities-wrap">
-                        <div class="single-facilities">
-                            <i class="facilities-icon flaticon-coffee-cup"></i>
-                            <h3>Welcome Drink​​​​</h3>
-                            <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                            <a href="service-details.html" class="icon-btn">
-									<i class="flaticon-right"></i>
-								</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-facilities-wrap">
-                        <div class="single-facilities">
-                            <i class="facilities-icon flaticon-garage"></i>
-                            <h3>​​Parking Space</h3>
-                            <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                            <a href="service-details.html" class="icon-btn">
-									<i class="flaticon-right"></i>
-								</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-facilities-wrap">
-                        <div class="single-facilities">
-                            <i class="facilities-icon flaticon-water"></i>
-                            <h3>Cold Hot & Water​</h3>
-                            <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
-                            <a href="service-details.html" class="icon-btn">
+                            <h3>Jungle Safari Desk​</h3>
+                            <p>Embark on thrilling safari tours for unforgettable wildlife encounters and breathtaking jungle exploration.</p>
+                            <a href="javascript:void(0)" class="icon-btn">
 									<i class="flaticon-right"></i>
 								</a>
                         </div>
@@ -364,13 +469,12 @@
     <section class="incredible-area ptb-140 jarallax">
         <div class="container">
             <div class="incredible-content">
-                <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-btn popup-youtube">
+                <a href="javascript:void(0)" class="video-btn popup-youtube">
 						<i class="flaticon-play-button"></i>
 					</a>
                 <h2><span>Incredible!</span> Are you coming today</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores sed obcaecati, magni excepturi, temporibus vero, inventore tenetur assumenda natus sequi labore. Voluptates eligendi dolores quod temporibus aperiam adipisci, quasi reprehenderit.
-                    Voluptates eligendi dolores quod temporibus.</p>
-                <a href="team.html" class="default-btn">
+                <p>Join us for an exciting day of activities and exploration. Whether you're here for relaxation or adventure, we have something special planned just for you. Don’t miss out on an unforgettable experience!</p>
+                <a href="contact" class="default-btn">
 						Join Us Today
 						<i class="flaticon-right"></i>
 					</a>
@@ -383,425 +487,7 @@
     </section>
     <!-- End Incredible Area -->
 
-    <!-- Start Our Rooms Area -->
-    <section class="our-rooms-area pt-60 pb-100">
-        <div class="container">
-            <div class="section-title">
-                <span>Our Rooms</span>
-                <h2>Fascinating rooms & suites</h2>
-            </div>
-            <div class="tab industries-list-tab">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <ul class="tabs">
-                            <li class="single-rooms">
-                                <img src="assets/img/rooms/button-img-1.jpg" alt="Image">
-                                <div class="room-content">
-                                    <h3>Double Room</h3>
-                                    <span>From $75.9/night</span>
-                                </div>
-                            </li>
-                            <li class="single-rooms">
-                                <img src="assets/img/rooms/button-img-2.jpg" alt="Image">
-                                <div class="room-content">
-                                    <h3>Luxury Room</h3>
-                                    <span>From $50.9/night</span>
-                                </div>
-                            </li>
-                            <li class="single-rooms">
-                                <img src="assets/img/rooms/button-img-3.jpg" alt="Image">
-                                <div class="room-content">
-                                    <h3>Best Room</h3>
-                                    <span>From $70.9/night</span>
-                                </div>
-                            </li>
-                            <li class="single-rooms">
-                                <img src="assets/img/rooms/button-img-4.jpg" alt="Image">
-                                <div class="room-content">
-                                    <h3>Classic Room</h3>
-                                    <span>From $95.9/night</span>
-                                </div>
-                            </li>
-                            <li class="single-rooms">
-                                <img src="assets/img/rooms/button-img-5.jpg" alt="Image">
-                                <div class="room-content">
-                                    <h3>Budget Room</h3>
-                                    <span>From $95.9/night</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="tab_content">
-                            <div class="tabs_item">
-                                <div class="our-rooms-single-img room-bg-1">
-                                </div>
-                                <span class="preview-item">The Preview Of Double Room</span>
-                            </div>
-                            <div class="tabs_item">
-                                <div class="our-rooms-single-img room-bg-2">
-                                </div>
-                                <span class="preview-item">The Preview Of Luxury Room</span>
-                            </div>
-                            <div class="tabs_item">
-                                <div class="our-rooms-single-img room-bg-3">
-                                </div>
-                                <span class="preview-item">The Preview Of Best Room</span>
-                            </div>
-                            <div class="tabs_item">
-                                <div class="our-rooms-single-img room-bg-4">
-                                </div>
-                                <span class="preview-item">The Preview Of Classic Room</span>
-                            </div>
-                            <div class="tabs_item">
-                                <div class="our-rooms-single-img room-bg-5">
-                                </div>
-                                <span class="preview-item">The Preview Of Budget Room</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Our Rooms Area -->
-
-    <!-- Start City View Area -->
-    <section class="city-view-area ptb-100">
-        <div class="container">
-            <div class="city-wrap">
-                <div class="single-city-item owl-carousel owl-theme">
-                    <div class="city-view-single-item">
-                        <div class="city-content">
-                            <span>The City View</span>
-                            <h3>A charming view of the city town</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus fugit eligendi accusantium vel quos debitis cupiditate ducimus placeat explicabo distinctio, consectetur eos animi, a voluptate delectus.
-                                Id, explicabo saepe Consequuntur</p>
-
-                            <p>The view onin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ad minim veniam, quis nostrud exercitation consectetur.</p>
-                        </div>
-                    </div>
-                    <div class="city-view-single-item">
-                        <div class="city-content">
-                            <span>The City View</span>
-                            <h3>The charming view of the city</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus fugit eligendi accusantium vel quos debitis cupiditate ducimus placeat explicabo distinctio, consectetur eos animi, a voluptate delectus.
-                                Id, explicabo saepe Consequuntur</p>
-
-                            <p>The view onin wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ad minim veniam, quis nostrud exercitation consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End City View Area -->
-
-    <!-- Start Exclusive Area -->
-    <section class="exclusive-area pt-100 pb-70">
-        <div class="container">
-            <div class="section-title">
-                <span>Exclusive Offers</span>
-                <h2>You can get an exclusive offer </h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="exclusive-wrap">
-                        <div class="row">
-                            <div class="col-lg-6 pr-0">
-                                <div class="exclusive-img bg-1"></div>
-                            </div>
-                            <div class="col-lg-6 pl-0">
-                                <div class="exclusive-content">
-                                    <span class="title">Up To 30% Off</span>
-                                    <h3>Swimming for man</h3>
-                                    <span class="review">
-											4.5
-											<a href="single-product.html">(432 Reviews)</a>
-										</span>
-                                    <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
-                                    <ul>
-                                        <li>
-                                            <i class="bx bx-time"></i> Duration: 2Hours
-                                        </li>
-                                        <li>
-                                            <i class="bx bx-target-lock"></i> 18+ years
-                                        </li>
-                                    </ul>
-                                    <a href="book-table.html" class="default-btn">
-											Book Online
-											<i class="flaticon-right"></i>
-										</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="exclusive-wrap">
-                        <div class="row">
-                            <div class="col-lg-6 pr-0">
-                                <div class="exclusive-img bg-2"></div>
-                            </div>
-                            <div class="col-lg-6 pl-0">
-                                <div class="exclusive-content">
-                                    <span class="title">This Month Only</span>
-                                    <h3>$5 Breakfast package</h3>
-                                    <span class="review">
-											5.0
-											<a href="single-product.html">(580 Reviews)</a>
-										</span>
-                                    <p>Start $5 doller dolor sit aet odeu tur adiing elitse</p>
-                                    <ul>
-                                        <li>
-                                            <i class="bx bx-time"></i> Duration: 2Hours
-                                        </li>
-                                        <li>
-                                            <i class="bx bx-target-lock"></i> 18+ years
-                                        </li>
-                                    </ul>
-                                    <a href="book-table.html" class="default-btn">
-											Book Online
-											<i class="flaticon-right"></i>
-										</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Exclusive Area -->
-
-    <!-- Start Booking Area -->
-    <section class="bokking-area pb-70">
-        <div class="container">
-            <div class="section-title">
-                <span>Booking</span>
-                <h2>Direct booking benefits</h2>
-            </div>
-
-            <div class="row">
-                <div class="booking-col-2">
-                    <div class="single-booking">
-                        <a href="book-table.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-								<i class="book-icon flaticon-online-booking"></i>
-								<span class="booking-title">Free cost</span>
-								<h3>No booking fee</h3>
-							</a>
-
-                        <div class="modal fade" id="staticBackdrop">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">No booking fee</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod
-                                            alias. Natus voluptate.</p>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <a href="book-table.html" class="default-btn">
-												Book Now
-												<i class="flaticon-right"></i>
-											</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="booking-col-2">
-                    <div class="single-booking">
-                        <a href="book-table.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">
-								<i class="book-icon flaticon-podium"></i>
-								<span class="booking-title">Free cost</span>
-								<h3>Best rate guarantee</h3>
-							</a>
-
-                        <div class="modal fade" id="staticBackdrop-2">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Best rate guarantee</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod
-                                            alias. Natus voluptate.</p>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <a href="book-table.html" class="default-btn">
-												Book Now
-												<i class="flaticon-right"></i>
-											</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="booking-col-2">
-                    <div class="single-booking">
-                        <a href="contact-style-one.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop-3">
-								<i class="book-icon flaticon-airport"></i>
-								<span class="booking-title">Free cost</span>
-								<h3>Reservations 24/7</h3>
-							</a>
-
-                        <div class="modal fade" id="staticBackdrop-3">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Reservations 24/7</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod
-                                            alias. Natus voluptate.</p>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <a href="book-table.html" class="default-btn">
-												Book Now
-												<i class="flaticon-right"></i>
-											</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="booking-col-2">
-                    <div class="single-booking">
-                        <a href="service-style-one.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop-4">
-								<i class="book-icon flaticon-slow"></i>
-								<span class="booking-title">Free cost</span>
-								<h3>High-speed Wi-Fi</h3>
-							</a>
-
-                        <div class="modal fade" id="staticBackdrop-4">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">High-speed Wi-Fi</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod
-                                            alias. Natus voluptate.</p>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <a href="book-table.html" class="default-btn">
-												Book Now
-												<i class="flaticon-right"></i>
-											</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="booking-col-2">
-                    <div class="single-booking">
-                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#staticBackdrop-5">
-								<i class="book-icon flaticon-coffee-cup-1"></i>
-								<span class="booking-title">Free cost</span>
-								<h3>Free breakfast</h3>
-							</a>
-
-                        <div class="modal fade" id="staticBackdrop-5">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Free breakfast</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo neque eum tempore ducimus odit esse porro aperiam, delectus sunt omnis sed quod alias. Natus voluptate nemo explicabo fugiat quibusdam cupiditate quod
-                                            alias. Natus voluptate.</p>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <a href="book-table.html" class="default-btn">
-												Book Now
-												<i class="flaticon-right"></i>
-											</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Booking Area -->
-
-    <!-- Start Restaurants Area -->
-    <section class="restaurants-area pb-100">
-        <div class="container-fluid p-0">
-            <div class="section-title">
-                <span>Restaurants</span>
-                <h2>The area we cover under Ecorik</h2>
-            </div>
-
-            <div class="restaurants-wrap owl-carousel owl-theme">
-                <div class="single-restaurants bg-1">
-                    <i class="restaurants-icon flaticon-coffee-cup"></i>
-                    <span>Restaurants</span>
-                    <p>Restaurant wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaua. Ut nipor incididuit might br minim veniam.</p>
-                    <a href="service-details.html" class="default-btn">
-							Explore More
-							<i class="flaticon-right"></i> 
-						</a>
-                </div>
-                <div class="single-restaurants bg-2">
-                    <i class="restaurants-icon flaticon-swimming"></i>
-                    <span>Swimming Pool</span>
-                    <p>Restaurant wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaua. Ut nipor incididuit might br minim veniam.</p>
-                    <a href="service-details.html" class="default-btn">
-							Explore More
-							<i class="flaticon-right"></i> 
-						</a>
-                </div>
-                <div class="single-restaurants bg-3">
-                    <i class="restaurants-icon flaticon-speaker"></i>
-                    <span>Conference Room</span>
-                    <p>Restaurant wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaua. Ut nipor incididuit might br minim veniam.</p>
-                    <a href="service-details.html" class="default-btn">
-							Explore More
-							<i class="flaticon-right"></i> 
-						</a>
-                </div>
-                <div class="single-restaurants bg-4">
-                    <i class="restaurants-icon flaticon-podium"></i>
-                    <span>Best Rate</span>
-                    <p>Restaurant wansis dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaua. Ut nipor incididuit might br minim veniam.</p>
-                    <a href="service-details.html" class="default-btn">
-							Explore More
-							<i class="flaticon-right"></i> 
-						</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Restaurants Area -->
-
+   
     <!-- start Testimonials Area -->
     <section class="testimonials-area pb-100">
         <div class="container">
@@ -892,131 +578,126 @@
         </div>
     </section>
     <!-- End Testimonials Area -->
-
-    <!-- End News Area -->
-    <section class="news-area pb-60">
-        <div class="container">
-            <div class="section-title">
-                <span>Our BLog</span>
-                <h2>News & articles updates </h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-news">
-                        <div class="news-img">
-                            <a href="news-details.html">
-									<img src="assets/img/news/1.jpg" alt="Image">
-								</a>
-                            <div class="dates">
-                                <span>HOTEL</span>
-                            </div>
-                        </div>
-                        <div class="news-content-wrap">
-                            <ul>
-                                <li>
-                                    <a href="news-details.html">
-											<i class="flaticon-user"></i>
-											Admin
-										</a>
-                                </li>
-                                <li>
-                                    <a href="news-details.html">
-											<i class="flaticon-conversation"></i>
-											Comment
-										</a>
-                                </li>
-                            </ul>
-                            <a href="news-details.html">
-                                <h3>Celebrating Decade Years Of Hotel In 2024</h3>
-                            </a>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
-                            <a class="read-more" href="news-details.html">
-									Read More
-									<i class="flaticon-right"></i>
-								</a>
-                        </div>
-                    </div>
+ <!-- Modal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content ">
+                <div class="modal-header" style="border-bottom: none;    padding: 0px 3px;">
+                    <button type="button" class="btn-close text-white"  data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-news">
-                        <div class="news-img">
-                            <a href="news-details.html">
-									<img src="assets/img/news/2.jpg" alt="Image">
-								</a>
-                            <div class="dates">
-                                <span>PRICE</span>
+                <div class="modal-body">
+                    <form id="enquiry_form" name="enquiry_form">
+                    <h5 class="modal-title text-white text-center pb-3" id="enquiryModalLabel">Enquire now for an extraordinary<br> wildlife adventure</h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-2">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                </div>
+                            </div>
+                           <div class="col-md-12">
+                                <div class="mb-2">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-2">
+                                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Ccntact Number">
+                                </div>
                             </div>
                         </div>
-                        <div class="news-content-wrap">
-                            <ul>
-                                <li>
-                                    <a href="news-details.html">
-											<i class="flaticon-user"></i>
-											Admin
-										</a>
-                                </li>
-                                <li>
-                                    <a href="news-details.html">
-											<i class="flaticon-conversation"></i>
-											Comment
-										</a>
-                                </li>
-                            </ul>
-                            <a href="news-details.html">
-                                <h3>A Perfect Day With Businessman At Ecorik Hotel</h3>
-                            </a>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
-                            <a class="read-more" href="news-details.html">
-									Read More
-									<i class="flaticon-right"></i>
-								</a>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" name="message" rows="2" placeholder="Message"></textarea>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-                    <div class="single-news">
-                        <div class="news-img">
-                            <a href="news-details.html">
-									<img src="assets/img/news/1.jpg" alt="Image">
-								</a>
-                            <div class="dates">
-                                <span>STORE</span>
-                            </div>
-                        </div>
-                        <div class="news-content-wrap">
-                            <ul>
-                                <li>
-                                    <a href="news-details.html">
-											<i class="flaticon-user"></i>
-											Admin
-										</a>
-                                </li>
-                                <li>
-                                    <a href="news-details.html">
-											<i class="flaticon-conversation"></i>
-											Comment
-										</a>
-                                </li>
-                            </ul>
-                            <a href="news-details.html">
-                                <h3>Celebrating Decade Years Of Hotel In 2024</h3>
-                            </a>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis veniam corrupti perferendis.</p>
-                            <a class="read-more" href="news-details.html">
-									Read More
-									<i class="flaticon-right"></i>
-								</a>
-                        </div>
-                    </div>
+                        <button type="submit" class="btn btn-warning" id="sndbtn">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End News Area -->
-
+    </div>
    
 <jsp:include page="../footer.jsp" />
 <jsp:include page="../js.jsp" />
+<script>
+$(document).ready(function () {
+	  setTimeout(function () {
+	    $('#enquiryModal').modal('show');
+	  }, 2000); // 2000 milliseconds = 2 seconds
+	});
+	
+$(function() {
+	$("form[name='enquiry_form']").validate(
+			{
+				rules : {
+					name : {
+						required : true,
+					},
+					email : {
+						required : true,
+					},
+					phoneNumber : {
+						required : true,
+					},
+					message : {
+						required : true,
+					},
+				},
+
+				messages : {
+												
+					name : {
+						required : "Please enter  name",
+					},														
+					email : {
+						required : "Please enter email."
+					},
+					phoneNumber : {
+						required : "Please enter contact number."
+					},
+					message : {
+						required : "Please write message here."
+					},
+					
+					
+				},
+
+				submitHandler : function(form) {
+					$("#sndbtn").attr("disabled",true);
+					$("#sndbtn").html("Please wait...");
+					var name = $("#name").val();
+					var email = $("#email").val();
+					var phoneNumber = $("#phoneNumber").val();
+					var message = $("#message").val();
+					 var obj = {
+							 "name" : name,
+							 "email" : email,
+							"mobile_number" :phoneNumber,
+							 "message" :message
+					 };
+					$.ajax({
+						url : 'add_enquiry',
+						type : 'post',
+						data : JSON.stringify(obj),
+						dataType : 'json',
+						contentType :  'application/json',
+						success : function(data) {
+
+							if (data['status'] == 'Success') {
+									alert(data['message']);
+									 $('#enquiryModal').modal('hide');
+							} else if(data['status'] == 'Already_Exist'){
+								alert(data['message']);
+							}
+							else{
+								alert(data['message']);
+							}
+						}
+					});
+
+				}
+			});
+
+});
+</script>
 
    
 </body>

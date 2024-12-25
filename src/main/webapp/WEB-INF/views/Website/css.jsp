@@ -32,6 +32,34 @@
     <link rel="stylesheet" href="assets/css/dark.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <style>
+    .buy-now-btn{
+    	display: none !important; 
+    }
+    .others-option{
+        margin: auto;
+    	margin-left: 35px;
+}
+    }
+    /* .single-rooms-three{
+    	height: 400px;
+    } */
+    .single-rooms-three img{
+    	height: 100%;
+    	object-fit: cover;
+    }
+    .error{
+        	color: red;
+        }
+        
+        .cont{
+        	    margin: auto;
+			    background: #cc8c18;
+			    border-radius: 30px;
+			    padding: 11px 14px !important;
+			    height: 50px;
+        }
+    </style>

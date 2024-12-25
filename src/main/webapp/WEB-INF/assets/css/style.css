@@ -1278,15 +1278,17 @@ Eorik SliderArea Style
 }
 
 .slider-item-bg-1 {
-    background-image: url(../img/home-one/slider/slider-img-1.jpg);
+    background-image: url(../img/BTR/s1.jpg);
 }
 
 .slider-item-bg-2 {
-    background-image: url(../img/home-one/slider/slider-img-2.jpg);
+   background-image: url(../img/BTR/s3.jpg);
+/*    background-image: url(../img/home-one/slider/slider-img-2.jpg);*/
 }
 
 .slider-item-bg-3 {
-    background-image: url(../img/home-one/slider/slider-img-3.jpg);
+    
+    background-image: url(../img/home-one/slider/slider-img-1.jpg);
 }
 
 /*
@@ -1544,8 +1546,8 @@ Facilities Area Style
 }
 
 .single-facilities-wrap .single-facilities {
-    text-align: center;
-    background-image: url(../../assets/img/facilities-card-bg.png);
+   /* text-align: center;
+    background-image: url(../../assets/img/facilities-card-bg.png);*/
     background-position: center center;
     background-size: cover;
     height: 100%;
@@ -3136,20 +3138,45 @@ Exclusive Area Two Style
 }
 
 .exclusive-area-two .exclusive-img.bg-3 {
-    background-image: url(../../assets/img/exclusive/3.jpg);
+    background-image: url(../../assets/img/w1.jpeg);
 }
 
 .exclusive-area-two .exclusive-img.bg-4 {
-    background-image: url(../../assets/img/exclusive/4.jpg);
+    background-image: url(../../assets/img/w2.webp);
 }
 
 .exclusive-area-two .exclusive-img.bg-5 {
-    background-image: url(../../assets/img/exclusive/5.jpg);
+    background-image: url(../../assets/img/w3.avif);
 }
 
 .exclusive-area-two .exclusive-img.bg-6 {
-    background-image: url(../../assets/img/exclusive/6.jpg);
+    background-image: url(../../assets/img/w4.webp);
 }
+.exclusive-area-two .exclusive-img.bg-7 {
+    background-image: url(../../assets/img/w5.jpeg);
+}
+.exclusive-area-two .exclusive-img.bg-8 {
+    background-image: url(../../assets/img/w6.jpeg);
+}
+.exclusive-area-two .exclusive-img.bg-9 {
+    background-image: url(../../assets/img/w7.jpg);
+}
+.exclusive-area-two .exclusive-img.bg-10 {
+    background-image: url(../../assets/img/w8.jpeg);
+}
+.exclusive-area-two .exclusive-img.bg-c1 {
+    background-image: url(../../assets/img/c1.jpg);
+}
+.exclusive-area-two .exclusive-img.bg-c2 {
+    background-image: url(../../assets/img/c2.jpg);
+}
+.exclusive-area-two .exclusive-img.bg-c3 {
+    background-image: url(../../assets/img/c3.jpg);
+}
+.exclusive-area-two .exclusive-img.bg-c4 {
+    background-image: url(../../assets/img/c4.jpg);
+}
+
 
 /*
 Choose Restaurant Area Style
@@ -3573,6 +3600,7 @@ Our Rooms Area Three Style
     background-color: #ffffff;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     margin-bottom: 30px;
+    height: 400px;
     -moz-text-align-last: center;
     text-align-last: center;
 }
@@ -3582,7 +3610,7 @@ Our Rooms Area Three Style
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
     padding: 30px;
     position: absolute;
-    bottom: -112px;
+    bottom: -75px;
     left: 0;
     right: 0;
     transition: all 0.5s;
@@ -5108,7 +5136,7 @@ FacilitiesArea Five Style
 }
 
 .facilities-area-five .facilities-single-bg {
-    background-image: url(../../assets/img/facilities-single-bg.jpg);
+    background-image: url(../../assets/img/bird.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5241,7 +5269,7 @@ Page Title Area Style
 =====================================================*/
 
 .page-title-area {
-    background-image: url(../../assets/img/page-bg.jpg);
+    /*background-image: url(../../assets/img/banimage.webp);*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

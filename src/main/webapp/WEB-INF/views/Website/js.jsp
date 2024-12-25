@@ -33,3 +33,4 @@
     <script src="assets/js/ajaxchimp.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
